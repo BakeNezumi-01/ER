@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<!-- Thymeleaf Namespace -->
+
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Choose mode</title>
+</head>
+<tr th:each="user: ${userList}">
+    <th class="thh" style=" width: 80%; max-width: 600px; " th:text="${user.name}"></th>
+    <th class="thh" style=" width: 80%; max-width: 600px; " th:text="${user.lastName}"></th></br>
+</tr>
+
+</body>
+</html>
