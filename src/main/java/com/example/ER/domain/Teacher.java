@@ -34,7 +34,7 @@ public class Teacher extends User {
     }
 
     public Teacher(String username, String password, String email, String name,
-                   String lastName, String middleName, Date birthday, String phone,
+                   String lastName, String middleName, String birthday, String phone,
                    String disciplines){
         this.id = new User(username, password, email, name, lastName, middleName,  birthday, phone).getId();
         this.disciplines = disciplines;

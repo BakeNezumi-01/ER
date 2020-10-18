@@ -66,7 +66,7 @@ public class Student extends User {
     }
 
     public Student(String username, String password, String email, String name,
-                   String lastName, String middleName, Date birthday, String phone,
+                   String lastName, String middleName, String birthday, String phone,
                    String nameParent1, String phoneParent1, String nameParent2, String phoneParent2){
         this.id = new User(username, password, email, name, lastName, middleName,  birthday, phone).getId();
         this.nameParent1 = nameParent1;

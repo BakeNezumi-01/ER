@@ -9,7 +9,7 @@ import java.util.Set;
 @Inheritance(strategy = InheritanceType.JOINED)
 public class User {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, unique=true)
     protected long id;
     protected String username;
@@ -18,7 +18,7 @@ public class User {
     protected String name;
     protected String lastname;
     protected String middlename;
-    protected Date birthday;
+    protected String birthday;//fix string to date
     protected String phone;
 
     @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
@@ -30,7 +30,7 @@ public class User {
     }
 
     public User(String username, String password, String email, String name,
-                String lastname, String middlename, Date birthday, String phone){
+                String lastname, String middlename, String birthday, String phone){
         this.username = username;
         this.password = password;
         this.email = email;
@@ -73,15 +73,15 @@ public class User {
         return name;
     }
 
-    public String getLastName() {
+    public String getLastname() {
         return lastname;
     }
 
-    public String getMiddleName() {
+    public String getMiddlename() {
         return middlename;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
@@ -105,15 +105,15 @@ public class User {
         this.name = name;
     }
 
-    public void setLastName(String lastname) {
+    public void setLastname(String lastname) {
         this.lastname = lastname;
     }
 
-    public void setMiddleName(String middlename) {
+    public void setMiddlename(String middlename) {
         this.middlename = middlename;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 
