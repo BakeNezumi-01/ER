@@ -3,7 +3,6 @@ package com.example.ER.domain;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.util.Date;
 
 @Entity
 public class Student extends User {

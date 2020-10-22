@@ -1,30 +1,20 @@
 package com.example.ER.domain;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.util.ArrayList;
-import java.util.List;
 
-public class Group {
+@Entity
+public class Groupp {
     @Id
     private String name;
     private long kurator; //fix it
-    List<Student> studentList = new ArrayList<>();
 
-    public Group(){
+    public Groupp(){
     }
 
-    public Group(String name){
+    public Groupp(String name, long kurator){
+        this.kurator = kurator;
         this.name = name;
-    }
-
-    public void addStudent(long id){
-        //studentList.add(id)
-        //TODO fix it
-    }
-
-    public void deleteStudent(long id){
-        //studentList.add(id)
-        //TODO fix it
     }
 
     public String getName() {

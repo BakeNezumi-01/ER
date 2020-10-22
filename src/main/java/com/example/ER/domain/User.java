@@ -1,8 +1,6 @@
 package com.example.ER.domain;
 
 import javax.persistence.*;
-import java.util.Date;
-import java.util.Set;
 
 @Entity
 @Table(name = "usr")
@@ -21,10 +19,6 @@ public class User {
     protected String birthday;//fix string to date
     protected String phone;
 
-    @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
-    @CollectionTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"))
-    @Enumerated(EnumType.STRING)
-    private Set<Role> roles;
 
     public User(){
     }
@@ -41,17 +35,6 @@ public class User {
         this.phone = phone;
     }
 
-    public Set<Role> getRoles() {
-        return roles;
-    }
-
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
-        /*
-        user.setActive(true);
-        user.setRoles(Collections.singleton(Role.USER));
-        userRepo.save(user);*/
-    }
 
     public Long getId() {
         return id;
