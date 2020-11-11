@@ -54,4 +54,14 @@ public class LessonResult implements Serializable { // make two tables instead t
     public int hashCode() {
         return Objects.hash(idLesson, idStudent);
     }
+
+    @Override
+    public String toString() {
+        return "LessonResult{" +
+                "idLesson=" + idLesson +
+                ", idStudent=" + idStudent +
+                ", attendance=" + attendance +
+                ", grade=" + grade +
+                '}';
+    }
 }

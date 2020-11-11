@@ -3,7 +3,6 @@ package com.example.ER.domain;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.util.Date;
 
 @Entity
 public class Teacher extends User {
@@ -38,5 +37,21 @@ public class Teacher extends User {
                    String disciplines){
         this.id = new User(username, password, email, name, lastName, middleName,  birthday, phone).getId();
         this.disciplines = disciplines;
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "id=" + id +
+                ", disciplines='" + disciplines + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", name='" + name + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", middlename='" + middlename + '\'' +
+                ", birthday='" + birthday + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
     }
 }

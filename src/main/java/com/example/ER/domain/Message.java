@@ -40,4 +40,15 @@ public class Message {
     public String getText() {
         return text;
     }
+
+    @Override
+    public String toString() {
+        return "Message{" +
+                "id=" + id +
+                ", sender=" + sender +
+                ", recipient=" + recipient +
+                ", date=" + date +
+                ", text='" + text + '\'' +
+                '}';
+    }
 }

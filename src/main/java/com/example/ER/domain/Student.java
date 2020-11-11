@@ -73,4 +73,24 @@ public class Student extends User {
         this.nameParent2 = nameParent2;
         this.phoneParent2 = phoneParent2;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", groupp='" + groupp + '\'' +
+                ", nameParent1='" + nameParent1 + '\'' +
+                ", phoneParent1='" + phoneParent1 + '\'' +
+                ", nameParent2='" + nameParent2 + '\'' +
+                ", phoneParent2='" + phoneParent2 + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", name='" + name + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", middlename='" + middlename + '\'' +
+                ", birthday='" + birthday + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
+    }
 }

@@ -11,7 +11,9 @@ public class Lesson {
     private long id;
     private Date date;
     private long teacher;
-    private String groupname;
+
+    @Column(name = "groupname")
+    private String groupName;
     private String discipline;//TODO enum
     private String homeWork;
     private String comment;
@@ -46,11 +48,11 @@ public class Lesson {
     }
 
     public String getGroupName() {
-        return groupname;
+        return groupName;
     }
 
-    public void setGroupName(String groupname) {
-        this.groupname = groupname;
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
     }
 
     public String getDiscipline() {
@@ -75,5 +77,18 @@ public class Lesson {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    @Override
+    public String toString() {
+        return "Lesson{" +
+                "id=" + id +
+                ", date=" + date +
+                ", teacher=" + teacher +
+                ", groupName='" + groupName + '\'' +
+                ", discipline='" + discipline + '\'' +
+                ", homeWork='" + homeWork + '\'' +
+                ", comment='" + comment + '\'' +
+                '}';
     }
 }

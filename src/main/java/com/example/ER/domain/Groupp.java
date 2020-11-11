@@ -32,4 +32,12 @@ public class Groupp {
     public void setKurator(long kurator) {
         this.kurator = kurator;
     }
+
+    @Override
+    public String toString() {
+        return "Groupp{" +
+                "name='" + name + '\'' +
+                ", kurator=" + kurator +
+                '}';
+    }
 }
