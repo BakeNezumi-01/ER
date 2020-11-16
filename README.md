@@ -1,4 +1,4 @@
-# ElectronicSchoolDiary
+# ER
 
 A little project of the electronic journal, like in school or smth
 
