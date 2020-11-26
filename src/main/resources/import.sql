@@ -13,14 +13,14 @@ insert into student values('IST-712', 'nameParent31', 'nameParent32', '880055535
 insert into teacher values('physics and mathematics', 1);
 insert into teacher values('english and all you need', 6);
 
-insert into lesson values(1, '', '20-09-01 09:00:00', 'mathematics', 'IST-712', '', 1);
-insert into lesson values(2, '', '20-09-01 10:45:00', 'physics', 'IST-711', '', 1);
-insert into lesson values(3, '', '20-09-01 13:00:00', 'mathematics', 'IST-711', '', 1);
-insert into lesson values(4, '', '20-09-01 14:45:00', 'physics', 'IST-712', '', 1);
-insert into lesson values(5, '', '20-09-01 09:00:00', 'english', 'IST-711', '', 6);
-insert into lesson values(6, '', '20-09-01 10:45:00', 'english', 'IST-712', '', 6);
-insert into lesson values(7, '', '20-09-01 13:00:00', 'physical culture', 'IST-712', '', 6);
-insert into lesson values(8, '', '20-09-01 14:45:00', 'physical culture', 'IST-711', '', 6);
+insert into lesson values(1, '', '2020-09-01 09:00:00', 'mathematics', 'IST-712', '', 1);
+insert into lesson values(2, '', '2020-09-01 10:45:00', 'physics', 'IST-711', '', 1);
+insert into lesson values(3, '', '2020-09-01 13:00:00', 'mathematics', 'IST-711', '', 1);
+insert into lesson values(4, '', '2020-09-01 14:45:00', 'physics', 'IST-712', '', 1);
+insert into lesson values(5, '', '2020-09-01 09:00:00', 'english', 'IST-711', '', 6);
+insert into lesson values(6, '', '2020-09-01 10:45:00', 'english', 'IST-712', '', 6);
+insert into lesson values(7, '', '2020-09-01 13:00:00', 'physical culture', 'IST-712', '', 6);
+insert into lesson values(8, '', '2020-09-01 14:45:00', 'physical culture', 'IST-711', '', 6);
 
 insert into groupp values('IST-711', 1);
 insert into groupp values('IST-712', 6);

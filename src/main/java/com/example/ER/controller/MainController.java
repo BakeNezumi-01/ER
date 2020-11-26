@@ -19,6 +19,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/v1")
+//@Controller
 public class MainController {
     @PersistenceContext
     private EntityManager entityManager;
@@ -42,16 +43,17 @@ public class MainController {
         return lessonRepository.findAll();
     }
 
+
     @GetMapping("/schedule")
     public List<Lesson> schedule(String groupName) {
         return lessonRepository.findByGroupNameOrderByIdAsc(groupName);
     }
 
     @PostMapping("/")
-    public String scheldule(String groupName){
-        List<Lesson> list = entityManager.createQuery(
-                "from Lesson l where l.groupName = '" + groupName + "'", Lesson.class).getResultList();
-        for(Lesson lesson : list) System.out.println(lesson);
+    public String printUsers(String username){
+        List<User> list = entityManager.createQuery(
+                "from User u where u.username = '" + username + "'", User.class).getResultList();
+        for(User user : list) System.out.println(user);
         System.out.println(1111);
 
         return "home";
